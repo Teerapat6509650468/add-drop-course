@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบเพิ่มถอนรายวิชา</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ระบบเพิ่มถอนรายวิชา</h1>
+        
+        <div class="form-container">
+            <h2>กรอกข้อมูลเพิ่มถอนรายวิชา</h2>
+            <form id="courseRequestForm">
+                <div class="form-group">
+                    <label for="date">วันที่:</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentFirstName">ชื่อ:</label>
+                    <input type="text" id="studentFirstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentLastName">นามสกุล:</label>
+                    <input type="text" id="studentLastName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentId">รหัสนักศึกษา:</label>
+                    <input type="text" id="studentId" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentYear">ชั้นปี:</label>
+                    <select id="studentYear" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="studyField">สาขาวิชา:</label>
+                    <input type="text" id="studyField" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="advisor">อาจารย์ที่ปรึกษา:</label>
+                    <input type="text" id="advisor" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="addressNumber">เลขที่:</label>
+                    <input type="text" id="addressNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="moo">หมู่:</label>
+                    <input type="text" id="moo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tumbol">ตำบล:</label>
+                    <input type="text" id="tumbol" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="amphur">อำเภอ:</label>
+                    <input type="text" id="amphur" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="province">จังหวัด:</label>
+                    <input type="text" id="province" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="postalCode">รหัสไปรษณีย์:</label>
+                    <input type="text" id="postalCode" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobilePhone">เบอร์มือถือ:</label>
+                    <input type="text" id="mobilePhone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์ (ไม่บังคับ):</label>
+                    <input type="text" id="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="cause">เหตุผล:</label>
+                    <textarea id="cause" required></textarea>
+                </div>
+
+                <div class="subjects-container">
+                    <div class="add-subjects">
+                        <h3>รายวิชาที่ต้องการเพิ่ม</h3>
+                        <div id="addSubjectList"></div>
+                        <button type="button" onclick="addSubject('add')">เพิ่มรายวิชา</button>
+                    </div>
+
+                    <div class="drop-subjects">
+                        <h3>รายวิชาที่ต้องการถอน</h3>
+                        <div id="dropSubjectList"></div>
+                        <button type="button" onclick="addSubject('drop')">เพิ่มรายวิชา</button>
+                    </div>
+                </div>
+
+                <button type="submit">ส่งคำขอ</button>
+            </form>
+        </div>
+
+        <div class="requests-container">
+            <h2>รายการคำขอเพิ่มถอนรายวิชา</h2>
+            <div id="requestsList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
