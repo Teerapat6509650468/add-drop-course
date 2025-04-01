@@ -38,7 +38,7 @@ spring.datasource.password=your_password
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/add-drop-course.git
+git clone https://github.com/Teerapat6509650468/add-drop-course.git
 cd add-drop-course
 ```
 
