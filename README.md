@@ -64,7 +64,7 @@ The application will be available at `http://localhost:8080`
 ## Project Structure
 
 ```
-src/main/java/ker/teerapat/add_drop_course/
+src/main/java/ker/teerapat/adddropcourse/
 ├── config/
 │   └── WebConfig.java
 ├── controller/
